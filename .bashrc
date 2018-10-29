@@ -1,11 +1,9 @@
-#
-# ~/.bashrc
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Aliases
 alias ls='ls --color=auto'
 alias ll='ls -lah --color=auto'
-#PS1='[\u@\h \W]\$ '
+
+# Shell Prompt
 PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
