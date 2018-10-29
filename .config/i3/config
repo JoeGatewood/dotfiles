@@ -3,34 +3,34 @@
 
 
 # Basic definitions 
-set $mod 					Mod1
-font pango:					ttf-dejavu 12
-hide_edge_borders 			both
+set $mod 			Mod1
+font pango:			ttf-dejavu 12
+hide_edge_borders 		both
 for_window [class="^.*"]	border pixel 5
-gaps inner					15
-gaps outer					0
-smart_gaps					on
-smart_borders				on
-set $term					urxvt
+gaps inner			15
+gaps outer			0
+smart_gaps			on
+smart_borders			on
+set $term			urxvt
 
 
 # Letter key bindings
-bindsym $mod+h				focus left
-bindsym $mod+j				focus down
-bindsym $mod+k				focus up
-bindsym $mod+l				focus right
-bindsym $mod+b				split h
-bindsym $mod+v				split v
-bindsym $mod+q				kill
-bindsym $mod+space			focus mode_toggle
+bindsym $mod+h			focus left
+bindsym $mod+j			focus down
+bindsym $mod+k			focus up
+bindsym $mod+l			focus right
+bindsym $mod+b			split h
+bindsym $mod+v			split v
+bindsym $mod+q			kill
+bindsym $mod+space		focus mode_toggle
 bindsym $mod+Shift+space	floating toggle
-bindsym $mod+z				fullscreen toggle
-bindsym $mod+d				exec dmenu_run -b
-bindsym $mod+Return			exec i3-sensible-terminal
-bindsym $mod+r				exec $term -e ranger
-bindsym $mod+i				exec $term -e htop
-bindsym $mod+c				exec $term -e cmus
-bindsym $mod+w				exec --no-startup-id firefox
+bindsym $mod+z			fullscreen toggle
+bindsym $mod+d			exec dmenu_run -b
+bindsym $mod+Return		exec i3-sensible-terminal
+bindsym $mod+r			exec $term -e ranger
+bindsym $mod+i			exec $term -e htop
+bindsym $mod+c			exec $term -e cmus
+bindsym $mod+w			exec --no-startup-id firefox
 bindsym $mod+Shift+a		exec pavucontrol
 bindsym $mod+Shift+c		reload
 bindsym $mod+Shift+r		restart
@@ -38,28 +38,26 @@ bindsym $mod+Shift+e		exec "i3-nagbar -t warning -m 'You pressed the exit shortc
 
 
 # Workspaces
-set $ws1					"1"
-set $ws2					"2"
-set $ws3					"3"
-set $ws4					"4"
-set $ws5					"5"
-set $ws6					"6"
-set $ws7					"7"
-set $ws8					"8"
-set $ws9					"9"
-set $ws10					"10"
-bindsym $mod+1				workspace $ws1
-bindsym $mod+2				workspace $ws2
-bindsym $mod+3				workspace $ws3
-bindsym $mod+4				workspace $ws4
-bindsym $mod+5				workspace $ws5
-bindsym $mod+6				workspace $ws6
-bindsym $mod+7				workspace $ws7
-bindsym $mod+8				workspace $ws8
-bindsym $mod+9				workspace $ws9
-bindsym $mod+0				workspace $ws10
-bindsym $mod+Shift+1		move container to workspace $ws1
-bindsym $mod+Shift+2		move container to workspace $ws2
+set $ws1			"1"
+set $ws2			"2"
+set $ws3			"3"
+set $ws4			"4"
+set $ws5			"5"
+set $ws6			"6"
+set $ws7			"7"
+set $ws8			"8"
+set $ws9			"9"
+set $ws10			"10"
+bindsym $mod+1			workspace $ws1
+bindsym $mod+2			workspace $ws2
+bindsym $mod+3			workspace $ws3
+bindsym $mod+4			workspace $ws4
+bindsym $mod+5			workspace $ws5
+bindsym $mod+6			workspace $ws6
+bindsym $mod+7			workspace $ws7
+bindsym $mod+8			workspace $ws8
+bindsym $mod+9			workspace $ws9
+bindsym $mod+0			workspace $ws10
 bindsym $mod+Shift+3		move container to workspace $ws3
 bindsym $mod+Shift+4		move container to workspace $ws4
 bindsym $mod+Shift+5		move container to workspace $ws5

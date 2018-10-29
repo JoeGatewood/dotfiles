@@ -54,12 +54,6 @@ let g:netrw_liststyle=3
 " Set default vertical split to right
 set splitright
 
-" Set soft tabs
-set tabstop=4
-set shiftwidth=4
-" set expandtab
-" set smarttab
-
 " Indent
 set ai
 set si
