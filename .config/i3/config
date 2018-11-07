@@ -6,7 +6,7 @@
 set $mod 			Mod1
 font pango:			ttf-dejavu 12
 hide_edge_borders 		both
-for_window [class="^.*"]	border pixel 5
+for_window [class="^.*"]	border pixel 3
 gaps inner			15
 gaps outer			0
 smart_gaps			on
@@ -75,5 +75,5 @@ bar
 {
 	status_command i3status
 }
-#exec --no-startup-id compton -b --config /home/jgatewood/.config/compton/compton.conf
-exec --no-startup-id xsetroot -solid "#000000" 
+exec --no-startup-id compton -b
+exec --no-startup-id feh --bg-scale ~/.config/wall.jpeg 

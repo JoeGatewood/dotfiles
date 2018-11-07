@@ -66,4 +66,6 @@ highlight SpecialKey guifg=#4a4a59
 " Show line number and listchars
 set list
 set nu
+
+" Syntax on
 :syntax on
