@@ -11,7 +11,7 @@ gaps inner			15
 gaps outer			0
 smart_gaps			on
 smart_borders			on
-set $term			urxvt
+set $term			urxvt	
 
 
 # Letter key bindings
@@ -26,7 +26,7 @@ bindsym $mod+space		focus mode_toggle
 bindsym $mod+Shift+space	floating toggle
 bindsym $mod+z			fullscreen toggle
 bindsym $mod+d			exec dmenu_run -b
-bindsym $mod+Return		exec i3-sensible-terminal
+bindsym $mod+Return		exec $term 
 bindsym $mod+r			exec $term -e ranger
 bindsym $mod+i			exec $term -e htop
 bindsym $mod+c			exec $term -e cmus
@@ -76,4 +76,4 @@ bar
 	status_command i3status
 }
 #exec --no-startup-id compton -b --config /home/jgatewood/.config/compton/compton.conf
-exec_always --no-startup-id feh --bg-scale ~/.config/wall.png
+exec --no-startup-id xsetroot -solid "#000000" 
