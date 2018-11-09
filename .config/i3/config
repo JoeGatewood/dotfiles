@@ -1,7 +1,6 @@
 # Joe Gatewood's i3-gaps configuration file
 # 20180922	jg	created
 
-
 # Basic definitions 
 set $mod 			Mod1
 font pango:			ttf-dejavu 12
@@ -12,7 +11,6 @@ gaps outer			0
 smart_gaps			on
 smart_borders			on
 set $term			urxvt	
-
 
 # Letter key bindings
 bindsym $mod+h			focus left
@@ -35,7 +33,6 @@ bindsym $mod+Shift+a		exec pavucontrol
 bindsym $mod+Shift+c		reload
 bindsym $mod+Shift+r		restart
 bindsym $mod+Shift+e		exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
 
 # Workspaces
 set $ws1			"1"
@@ -71,11 +68,15 @@ bindsym $mod+Shift+0		move container to workspace $ws10
 assign [class="Firefox"]	$ws2
 assign [class="mpv"]		$ws4
 
-
-# Start up applications
+# Start Up Applications
+# Screen Resolution
+exec_always --no-startup-id ~/.scripts/resolution
+# Status Bar
 bar
 {
 	status_command i3status
 }
+# Composite Manager
 exec --no-startup-id compton -b
-exec --no-startup-id feh --bg-scale ~/.config/wall.jpeg 
+# Background Wallpaper
+exec_always --no-startup-id feh --bg-scale ~/.config/wall.jpeg 
