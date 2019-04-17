@@ -7,4 +7,4 @@ robocopy %SRC% %DST% /E
 
 ::Delete save folders older than 7 days
 set BPATH=%SYSTEMDRIVE%\Users\%USERNAME%\Backups
-forfiles /P %BPATH% /D -7 /C "cmd /c if /I @isdir == true rd /s /q @path"
+forfiles /P %BPATH% /D -7 /C "cmd /c if /I @isdir == true rd /S /Q @path"
